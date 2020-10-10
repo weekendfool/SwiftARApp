@@ -73,6 +73,21 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         planeGeometory.height = CGFloat(planeAnchor.extent.z)
         geometryPlaneNode.simdPosition = float3(planeAnchor.center.x, 0, planeAnchor.center.z)
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        // 最初にタップした座標を取り出す
+        guard let touch = touches.first else { return }
+        // スクリーン座標に変換する
+        let touchPos = touch.location(in: sceneView)
+        // 検出した平面との当たり判定
+        let hitTestResult = sceneView.hitTest(touchPos, types: .existingPlaneUsingExtent)
+        if !hitTestResult.isEmpty {
+            if let hitResult = hitTestResult.first {
+                // 平面と当たっていたら球を追加する
+                addSphere(hitResult: hitResult)
+            }
+        }
+    }
 
     // MARK: - ARSCNViewDelegate
     
