@@ -84,6 +84,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         planeGeometory.width = CGFloat(planeAnchor.extent.x)
         planeGeometory.height = CGFloat(planeAnchor.extent.z)
         geometryPlaneNode.simdPosition = float3(planeAnchor.center.x, 0, planeAnchor.center.z)
+        
+        // PhysicsBodyを平面にも設定
+        geometryPlaneNode.physicsBody = SCNPhysicsBody(type: .kinematic, shape: SCNPhysicsShape(geometry: planeGeometory, options: nil))
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
