@@ -28,24 +28,27 @@
                                 <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="target" translatesAutoresizingMaskIntoConstraints="NO" id="RV2-B8-0LM">
-                                <rect key="frame" x="137" y="339" width="140" height="140"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="target" translatesAutoresizingMaskIntoConstraints="NO" id="Ls8-gb-m4B">
+                                <rect key="frame" x="87" y="389" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="EfZ-2R-70W"/>
+                                    <constraint firstAttribute="height" constant="128" id="MMz-zC-pBU"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="mUp-gI-GuD" firstAttribute="centerX" secondItem="RV2-B8-0LM" secondAttribute="centerX" id="6Wz-ub-PLu"/>
+                            <constraint firstItem="Ls8-gb-m4B" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="87" id="5m3-pM-qCB"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="Ls8-gb-m4B" secondAttribute="bottom" constant="345" id="8La-pz-xmr"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
-                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="RV2-B8-0LM" secondAttribute="trailing" constant="137" id="L1y-20-Tp5"/>
-                            <constraint firstItem="mUp-gI-GuD" firstAttribute="top" secondItem="RV2-B8-0LM" secondAttribute="bottom" constant="30" id="Rv7-zV-bbJ"/>
-                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="RV2-B8-0LM" secondAttribute="bottom" constant="339" id="UIs-R7-8FR"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="VpT-BR-CcM"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
-                            <constraint firstItem="RV2-B8-0LM" firstAttribute="top" secondItem="fQZ-KI-GVf" secondAttribute="top" constant="339" id="Zjj-sb-wbl"/>
-                            <constraint firstItem="RV2-B8-0LM" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="137" id="bq9-bH-uAx"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="Ls8-gb-m4B" secondAttribute="trailing" constant="87" id="YnC-rK-Mh8"/>
+                            <constraint firstItem="mUp-gI-GuD" firstAttribute="top" secondItem="Ls8-gb-m4B" secondAttribute="bottom" constant="36" id="ja1-lf-m2q"/>
                             <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="mUp-gI-GuD" secondAttribute="trailing" constant="122" id="pLd-C6-wIy"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
                             <constraint firstItem="mUp-gI-GuD" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="122" id="sgY-o2-PdP"/>
+                            <constraint firstItem="Ls8-gb-m4B" firstAttribute="top" secondItem="fQZ-KI-GVf" secondAttribute="top" constant="345" id="tZB-0M-try"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>
