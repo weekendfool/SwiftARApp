@@ -25,6 +25,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // ライトの追加
         sceneView.autoenablesDefaultLighting = true
         
+        // 平面検出
+        let configuration = ARWorldTrackingConfiguration()
+        configuration.planeDetection = .horizontal
+        sceneView.session.run(configuration)
+        
     }
     
     // 画面をタップした時に呼ばれる
